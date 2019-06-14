@@ -1,0 +1,50 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+  <div class="main-container">
+    
+    <header class="header header-6">
+            
+        <a class="active" href="#clr-charts">clr-charts</a>
+        <a href="#about" target="_blank">About</a>
+        <a href="https://medium.com/@deepanagla980" target="_blank">Blog</a>
+        <a href="#documentation">Documentation</a>
+
+   <!--   <input type="text" placeholder="Search.." --> 
+    </header>
+    
+    <div class="content-container">
+        <div class="content-area">
+         <h1> clr-charts (Angular7 directive for Project Clarity to display charts) </h1>
+         <button class="btn btn-primary" >View On Github</button> <button class="btn btn-warning">View On NPM</button>  <hr>
+<h2>Installation</h2>
+<h3>1.Install clr-charts using NPM</h3>
+<textarea rows="1"> npm i clr-charts </textarea>
+<h3>2.Install Chart.js library</h3>
+<textarea rows="1"> Note : Chart.js is already added as a dependency in clr-charts, no need for it's installation. (npm install --save chart.js)</textarea>
+<h2>API</h2>
+<h3>1.Usage</h3>
+<textarea rows="3">
+        import { ClrChartsModule } from 'clr-charts';
+        //In your App's module:
+        imports: [ ClrChartsModule]</textarea>
+<h2>Chart Types</h2>
+<textarea rows="2">There is one directive for all chart types-"clr-charts" and there are 6 types of charts:
+ Line Chart, Bar Chart, Pie Chart, Radar Chart, Doughnut Chart & Radar Chart.</textarea>  
+ 
+ <clr-charts type='line'[data]="data" options="options"></clr-charts>
+<clr-charts type='bar' [data]="data" options="options"></clr-charts>
+<clr-charts type='pie'[data]="data" options="options"></clr-charts> 
+<clr-charts type='radar'[data]="data" options="options"></clr-charts>
+<clr-charts type='doughnut' [data]="data" options="options"></clr-charts>
+<clr-charts type='polarArea'[data]="data" options="options"></clr-charts>
+        </div>
+        <nav class="sidenav">
+             <a href="#link 1">Line Chart</a> 
+            <a href="#link 2" >Bar Chart</a>
+            <a href="#link 3">Pie Chart</a>
+            <a href="#link 4">Radar Chart</a>
+            <a href="#link5">Doughnut Chart</a>
+            <a href="#link6">Polar Area Chart</a>
+        </nav>
+    </div>
+</div>
